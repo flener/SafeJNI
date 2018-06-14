@@ -73,7 +73,7 @@ template <typename C1, typename ...C> struct Concatenate<C1,C...>{
 
     class Utils 
     {
-    private:
+    public:
         static JNIEnv * env;
         static JavaVM * javaVM;
     public:
