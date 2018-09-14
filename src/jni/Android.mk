@@ -9,6 +9,8 @@ LOCAL_CPPFLAGS := \
 	-std=c++11 \
 	-D__GXX_EXPERIMENTAL_CXX0X__
 
+LOCAL_LDFLAGS := -Wl,-soname,libsafejni.so
+
 LOCAL_LDLIBS := -llog -latomic
 LOCAL_MODULE := safejni
 
